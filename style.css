@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.quiz-container {
+  background-color: #eee;
+  margin: 10px auto;
+  width: 800px;
+  padding: 10px;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+.quiz-container .quiz-info {
+  display:flex;
+  margin: 10px;
+
+}
+
+.quiz-container .quiz-info .category {
+  flex: 1;
+}
+
+.quiz-container .quiz-info .questions-count {
+  flex: 1;
+  text-align: right;
+  
+}
+
+.quiz-container .questions-area {
+  padding: 10px;
+
+}
+.quiz-container .answers-area {
+  padding: 10px;
+
+}
+
+.quiz-container .answers-area .answer  {
+  padding: 10px;
+  
+}
+
+.quiz-container .answers-area .answer label {
+  font-weight: bold;
+  color: #777;
+  margin-left: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.quiz-container .answers-area .answer:not(:last-child) {
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.quiz-container .answers-area .answer input[type="radio"]:checked  + label{
+  color: #0075ff;
+}
+
+
+.quiz-container .submit-question {
+  display: block;
+  background-color: #0075ff;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  cursor: pointer;
+}
+
+
+.quiz-container .bullets {
+  display: flex;
+  margin-top: 15px;
+  border-top: 1px solid #dfdfdf;
+  padding: 15px 0;
+}
+
+.quiz-container .bullets .span-container {
+  display: flex;
+  flex: 1;
+
+
+}
+
+.quiz-container .bullets .span-container span {
+  width: 20px;
+  height: 20px;
+  background-color: #777;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  margin-right: 5px;
+
+}
+
+.quiz-container .bullets .span-container span.on {
+  background-color: #0075ff;
+}
+
+.quiz-container .bullets .time-counter {
+  flex: 1;
+  text-align: right;
+}
+
+
+.quiz-container .results {
+  margin-top: 20px;
+
+}
+
+.quiz-container .results .perfect {
+  color: #0075ff;
+  font-weight: bold;
+
+}
+
+.quiz-container .results .good {
+  color: #009688;
+  font-weight: bold;
+
+}
+
+.quiz-container .results .bad {
+  color: #dc0a0a;
+  font-weight: bold;
+
+}
